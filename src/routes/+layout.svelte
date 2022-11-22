@@ -11,4 +11,6 @@
 	<span>spagetti?</span>
 {/if}
 
+<!-- to fix, remove anything above this line or move it below the "slot" -->
+
 <slot />

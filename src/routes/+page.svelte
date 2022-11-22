@@ -1,9 +1,16 @@
 <main>
-	<h1>Welcome to FunkyKit</h1>
+	<!-- hint: go look in layout... -->
+	<h1>This text uses a normal css animation (non js friendly one ❤)</h1>
 	<p>
-		bad => Refresh and see animation play twice (it shouldn't) <br />
-		Ok so the issue seems to have something with what's in layout...
+		<strong>Bug:</strong> Animation plays twice on load!?. <br />
+		Can be hard to notice on Edge/Chrome but it's there as well<br />
+		It also seems most pronounced in firefox 😭.
 	</p>
+	<button
+		on:click={() => {
+			location.reload();
+		}}>Reload</button
+	>
 </main>
 
 <style>
@@ -20,7 +27,7 @@
 
 	/* this is where things go south */
 	h1 {
-		animation: intro 0.5s;
+		animation: intro 0.3s;
 	}
 
 	@keyframes intro {
